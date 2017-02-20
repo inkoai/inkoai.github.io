@@ -40,26 +40,26 @@ var initText = [
 ]
 
 var storyText = [
-  // 'There once was a girl, with a peculiar name,',
-  // 'winning her affection, O that was the aim.',
-  // 'The boy struggled through the night,',
-  // 'thinking of a way to wow her, without giving a fright.',
-  // 'Then it came to him, a plan above all',
-  // 'the plan was brilliant, neither too big or too small',
-  // 'See, he was a man of many different talents',
-  // 'like talking to a computer through some server clients.',
-  // 'To show her he tried; he picked his pen up,',
-  // 'and started making a program to say whats up.',
-  // 'The AI is smart; it locks the secrets with a very hard key,',
-  // 'a secret so dark that only she is allowed to see',
-  // 'But first to prove that she is,',
-  // 'she must complete a task',
-  // 'A simple riddle,',
-  // "it's literally all I ask!",
-  // 'To keep those pests out',
-  // 'she must do this quick.',
-  // 'as the answers are easy but,',
-  // 'the clock goes tic tick.',
+  'There once was a girl, with a peculiar name,',
+  'winning her affection, O that was the aim.',
+  'The boy struggled through the night,',
+  'thinking of a way to wow her, without giving a fright.',
+  'Then it came to him, a plan above all',
+  'the plan was brilliant, neither too big or too small',
+  'See, he was a man of many different talents',
+  'like talking to a computer through some server clients.',
+  'To show her he tried; he picked his pen up,',
+  'and started making a program to say whats up.',
+  'The AI is smart; it locks the secrets with a very hard key,',
+  'a secret so dark that only she is allowed to see',
+  'But first to prove that she is,',
+  'she must complete a task',
+  'A simple riddle,',
+  "it's literally all I ask!",
+  'To keep those pests out',
+  'she must do this quick.',
+  'as the answers are easy but,',
+  'the clock goes tic tick.',
 ];
 
 var fixKeyText = [
@@ -77,13 +77,13 @@ $(function(){
       callback: function() {
         $(".text-wrapper .prompt-text").show();
         clearInterval(randomKeyPress);
-        // $(window).keypress(function(e){
-        //   key = (e.keyCode) ? e.keyCode : e.which;
-        //   if (key == 32) {
-        //     storyPrompt();
-        //     $(".text-wrapper .prompt-text").hide();
-        //   }
-        // });
+        $(window).keypress(function(e){
+          key = (e.keyCode) ? e.keyCode : e.which;
+          if (key == 32) {
+            storyPrompt();
+            $(".text-wrapper .prompt-text").hide();
+          }
+        });
       }
     });
 });
