@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  overflow: hidden;
+  font-family: 'Petit Formal Script';
+  background:
+    radial-gradient(
+      ellipse at center,
+        #051838,
+        #0A093B 100%
+    );
+  color: #fff;
+}
